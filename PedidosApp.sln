@@ -7,6 +7,31 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.API", "PedidosAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.API.Tests", "PedidosApp.API.Tests\PedidosApp.API.Tests.csproj", "{554AD223-EC1E-4F2B-85BD-A38D8C69E8C3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{4CD503E5-7959-4FC2-902E-FB72451217E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DECB6B0A-A280-493F-8E77-5CE44E6AEDAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{3B9EAB0B-F315-4BAF-8095-D2EE19A3E40C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{1AF61241-2FDF-40E2-8C33-59B919E0E449}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Application", "PedidosApp.Application\PedidosApp.Application.csproj", "{9EE014CB-E680-4CD6-822E-45783E4CDEFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Application.Tests", "PedidosApp.Application.Tests\PedidosApp.Application.Tests.csproj", "{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Domain", "PedidosApp.Domain\PedidosApp.Domain.csproj", "{D1574606-F047-473B-9096-EC4AF3725D3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Domain.Tests", "PedidosApp.Domain.Tests\PedidosApp.Domain.Tests.csproj", "{60EDD58C-4D12-4A9C-84B3-617F0FD397AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data", "PedidosApp.Infra.Data\PedidosApp.Infra.Data.csproj", "{6B532528-8169-49B0-9CFB-2856199D777E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data.Tests", "PedidosApp.Infra.Data.Tests\PedidosApp.Infra.Data.Tests.csproj", "{668B2262-36A5-4187-86D0-A6530B9AA114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{18BB35BF-ACD8-48BE-8C77-805509231B9C}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +46,42 @@ Global
 		{554AD223-EC1E-4F2B-85BD-A38D8C69E8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{554AD223-EC1E-4F2B-85BD-A38D8C69E8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{554AD223-EC1E-4F2B-85BD-A38D8C69E8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE014CB-E680-4CD6-822E-45783E4CDEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE014CB-E680-4CD6-822E-45783E4CDEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE014CB-E680-4CD6-822E-45783E4CDEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE014CB-E680-4CD6-822E-45783E4CDEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1574606-F047-473B-9096-EC4AF3725D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1574606-F047-473B-9096-EC4AF3725D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1574606-F047-473B-9096-EC4AF3725D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1574606-F047-473B-9096-EC4AF3725D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60EDD58C-4D12-4A9C-84B3-617F0FD397AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60EDD58C-4D12-4A9C-84B3-617F0FD397AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60EDD58C-4D12-4A9C-84B3-617F0FD397AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60EDD58C-4D12-4A9C-84B3-617F0FD397AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B532528-8169-49B0-9CFB-2856199D777E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B532528-8169-49B0-9CFB-2856199D777E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B532528-8169-49B0-9CFB-2856199D777E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B532528-8169-49B0-9CFB-2856199D777E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{668B2262-36A5-4187-86D0-A6530B9AA114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668B2262-36A5-4187-86D0-A6530B9AA114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668B2262-36A5-4187-86D0-A6530B9AA114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668B2262-36A5-4187-86D0-A6530B9AA114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EF2DA61-E1BC-4CB1-9F67-40064C3CA3A3} = {4CD503E5-7959-4FC2-902E-FB72451217E3}
+		{554AD223-EC1E-4F2B-85BD-A38D8C69E8C3} = {4CD503E5-7959-4FC2-902E-FB72451217E3}
+		{9EE014CB-E680-4CD6-822E-45783E4CDEFC} = {DECB6B0A-A280-493F-8E77-5CE44E6AEDAD}
+		{6E2B1F98-F156-4A78-BD9A-548DC81EB9BA} = {DECB6B0A-A280-493F-8E77-5CE44E6AEDAD}
+		{D1574606-F047-473B-9096-EC4AF3725D3C} = {3B9EAB0B-F315-4BAF-8095-D2EE19A3E40C}
+		{60EDD58C-4D12-4A9C-84B3-617F0FD397AE} = {3B9EAB0B-F315-4BAF-8095-D2EE19A3E40C}
+		{6B532528-8169-49B0-9CFB-2856199D777E} = {1AF61241-2FDF-40E2-8C33-59B919E0E449}
+		{668B2262-36A5-4187-86D0-A6530B9AA114} = {1AF61241-2FDF-40E2-8C33-59B919E0E449}
 	EndGlobalSection
 EndGlobal

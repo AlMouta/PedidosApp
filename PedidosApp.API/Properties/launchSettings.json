@@ -5,8 +5,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      //"launchUrl": "swagger", //abrir o navegador ao executar o projeto
-      "launchUrl": "scalar/v1", //abrir o navegador ao executar o projeto
+      "launchUrl": "swagger", //abrir o navegador ao executar o projeto
+     //"launchUrl": "scalar/v1", //abrir o navegador ao executar o projeto
       "applicationUrl": "http://localhost:5214", //url inicial do projeto
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
